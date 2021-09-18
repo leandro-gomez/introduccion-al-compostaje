@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint --no-fix",
+    "fix-lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,8 +18,8 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^7.18.0"
   },
   "eslintConfig": {
     "root": true,
@@ -26,13 +27,15 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/vue3-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "error"
+    }
   },
   "browserslist": [
     "> 1%",
