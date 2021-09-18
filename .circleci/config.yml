@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Run Tests
           command: npm run test
-  estlint:
+  eslint:
       docker:
         - image: cimg/node:14.17
       steps:
