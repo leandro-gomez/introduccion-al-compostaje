@@ -45,3 +45,4 @@ workflows:
   main:
     jobs:
       - test
+      - eslint
