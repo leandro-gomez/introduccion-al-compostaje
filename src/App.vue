@@ -1,9 +1,5 @@
 <template>
-  <img
-    alt="Vue logo"
-    src="./assets/logo.png"
-  >
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <HelloWorld msg="Introducción al Compostaje mediante el juego" />
 </template>
 
 <script>
@@ -18,12 +14,18 @@ export default {
 </script>
 
 <style>
+html {
+  min-height: 100%; 
+}
+
+body {
+  min-height: 100%; 
+  background: linear-gradient(180deg, rgba(153,194,108,1) 0%, rgba(99,150,92,1) 35%, rgba(8,93,51,1) 100%); 
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Encode Sans;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
 }
 </style>
