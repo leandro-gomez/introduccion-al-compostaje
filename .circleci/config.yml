@@ -20,7 +20,7 @@ jobs:
             - ~/.npm
       - run:
           name: Run Tests
-          command: npm run test:unit
+          command: npm run test
   eslint:
       docker:
         - image: cimg/node:14.17
