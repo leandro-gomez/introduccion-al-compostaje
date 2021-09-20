@@ -1,8 +1,8 @@
 import {createRouter, createWebHashHistory} from "vue-router"
-import HelloWorld from "./components/HelloWorld"
+import Home from "./views/Home"
 
 const routes = [
-    { path: '/', component: HelloWorld, props: {"msg": "Introducción al Compostaje mediante el juego"}},
+    { path: '/', component: Home},
 ]
 
 

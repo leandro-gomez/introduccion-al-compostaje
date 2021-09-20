@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div class="home">
+    <h1>Introducción al Compostaje mediante el juego</h1>
     <p>
       Para referencias detalladas, consulte los siguientes documentos:
     </p>
@@ -24,14 +24,10 @@
 </template>
 
 <script>
+
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true
-    }
-  }
+  name: 'Home',
 }
 </script>
 
