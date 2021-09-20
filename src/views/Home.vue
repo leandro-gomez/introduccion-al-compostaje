@@ -32,7 +32,7 @@
   <div class="row">
     <div class="col">
       <h3>O prueba nuestro juego</h3>
-      <br/>
+      <br>
       <div
         class="btn-group"
         role="group"
