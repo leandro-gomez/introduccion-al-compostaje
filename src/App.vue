@@ -1,17 +1,6 @@
 <template>
-  <HelloWorld msg="Introducción al Compostaje mediante el juego" />
+  <router-view />
 </template>
-
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
-</script>
 
 <style>
 html {
