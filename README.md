@@ -1,5 +1,7 @@
 # introduccion-al-compostaje
 
+[![CircleCI](https://circleci.com/gh/leandro-gomez/introduccion-al-compostaje/tree/main.svg?style=svg)](https://circleci.com/gh/leandro-gomez/introduccion-al-compostaje/tree/main)
+
 Introducción al compostaje mediante el juego
 
 ## Inicializaión
