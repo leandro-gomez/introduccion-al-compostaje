@@ -10,9 +10,9 @@ npm install
 
 ### Git hooks
 
-In order to enable `pre-push` hooks only, run:
+Activar hooks `pre-push`:
 
-`ln -s $PWD/githooks/pre-push/run_hooks.sh .git/hooks/pre-push`
+`ln -s $PWD/githooks/pre-push .git/hooks/pre-push`
 
 ### Desarrollo
 
