@@ -8,6 +8,12 @@ Introducción al compostaje mediante el juego
 npm install
 ```
 
+### Git hooks
+
+In order to enable `pre-push` hooks only, run:
+
+`ln -s $PWD/githooks/pre-push/run_hooks.sh .git/hooks/pre-push`
+
 ### Desarrollo
 
 ```bash
@@ -18,7 +24,7 @@ npm run serve
 npm run lint
 ```
 
-### Compilar y minificar para producción
+## Compilar y minificar para producción
 
 ```bash
 npm run build
