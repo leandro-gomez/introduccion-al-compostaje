@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  buid:
+  build:
     docker:
       - image: cimg/node:14.17
     steps:
@@ -34,17 +34,23 @@ jobs:
           name: Run Tests
           command: npm run test:unit
   eslint:
-      docker:
-        - image: cimg/node:14.17
-      steps:
-        - checkout
-        - attach_workspace:
-            at: node_modules/
-        - run:
-            name: Run Linting
-            command: npm run lint
+    docker:
+      - image: cimg/node:14.17
+    steps:
+      - checkout
+      - attach_workspace:
+          at: node_modules/
+      - run:
+          name: Run Linting
+          command: npm run lint
+
 workflows:
   main:
     jobs:
-      - test
-      - eslint
+      - build
+      - test:
+          requires: 
+            - build
+      - eslint:
+          requires: 
+            - build
